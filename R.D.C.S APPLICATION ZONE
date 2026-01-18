@@ -1,0 +1,190 @@
+<!DOCTYPE html><html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R.D.C.S APPLICATION ZONE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle at top, #220000, #000000 70%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      color: #fff;
+    }
+    .container {
+      background: rgba(10, 10, 10, 0.9);
+      width: 100%;
+      max-width: 520px;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 0 25px rgba(255,0,0,0.35);
+      border: 1px solid rgba(255,0,0,0.4);
+      position: relative;
+      overflow: hidden;
+    }.container::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 16px;
+  border: 2px solid rgba(255,0,0,0.6);
+  animation: borderPulse 3s infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes borderPulse {
+  from { opacity: 0.3; }
+  to { opacity: 1; }
+}
+h1 {
+  text-align: center;
+  color: #1e3c72;
+  margin-bottom: 10px;
+}
+.logo {
+  display: block;
+  margin: 0 auto 15px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(255,0,0,0.6), 0 0 20px rgba(255,0,0,0.4);
+  animation: cyberGlow 2.5s infinite alternate, slowRotate 12s linear infinite;
+}
+
+@keyframes cyberGlow {
+  0% {
+    box-shadow: 0 0 8px rgba(255,0,0,0.4), 0 0 15px rgba(255,0,0,0.2);
+  }
+  100% {
+    box-shadow: 0 0 18px rgba(255,0,0,0.9), 0 0 35px rgba(255,0,0,0.7);
+  }
+}
+
+@keyframes slowRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.logo-wrap {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 15px;
+}
+
+.radar {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(255,0,0,0.5);
+  animation: radarScan 2.8s linear infinite;
+}
+
+@keyframes radarScan {
+  0% { transform: scale(0.8); opacity: 0.8; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+.logo:hover {
+  box-shadow: 0 0 25px rgba(255,0,0,1), 0 0 50px rgba(255,0,0,0.8);
+}
+  to {
+    transform: rotate(360deg);
+  }
+}
+p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+label {
+  display: block;
+  margin-bottoms: 8px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 15px;
+}
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  background: #1e3c72;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #16305c;
+}
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #777;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo-wrap">
+      <span class="radar"></span>
+      <img src="logo.png" alt="RDCS Logo" class="logo">
+    </div>
+    <h1>R.D.C.S APPLICATION ZONE</h1>
+    <p>ফরম পূরণ করে আবেদন করুন। আবেদন সাবমিট হলে সরাসরি ইমেইলে চলে যাবে।</p><!-- FormSubmit ব্যবহার করা হয়েছে -->
+<form action="https://formsubmit.co/rdcssourov@gmail.com" method="POST">
+  <!-- Extra settings -->
+  <input type="hidden" name="_subject" value="New Application - R.D.C.S APPLICATION ZONE">
+  <input type="hidden" name="_captcha" value="false">
+
+  <label>পূর্ণ নাম</label>
+  <input type="text" name="Full Name" placeholder="আপনার নাম লিখুন" required>
+
+  <label>ইমেইল</label>
+  <input type="email" name="Email" placeholder="আপনার ইমেইল লিখুন" required>
+
+  <label>মোবাইল নাম্বার</label>
+  <input type="tel" name="Mobile" placeholder="01XXXXXXXXX" required>
+
+  <label>আবেদনের ধরন</label>
+  <select name="Application Type" required>
+    <option value="">সিলেক্ট করুন</option>
+    <option>চাকরির আবেদন</option>
+    <option>মেম্বারশিপ</option>
+    <option>অন্যান্য</option>
+  </select>
+
+  <label>বিস্তারিত তথ্য</label>
+  <textarea name="Details" placeholder="এখানে বিস্তারিত লিখুন"></textarea>
+
+  <button type="submit">Apply Now</button>
+</form>
+
+<footer>
+  © 2026 R.D.C.S APPLICATION ZONE<br>
+  Email: rdcssourov@gmail.com
+</footer>
+
+  </div>
+</body>
+</html>
